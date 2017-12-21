@@ -1,0 +1,280 @@
+/**
+ * 
+ * @author Philipp Lehmann
+ *
+ */
+
+ /* PANE ROOT */
+.root{
+	-fx-background-image:url(Background.jpg); 	/* background-url: http://www.1zoom.net/Fantasy/wallpaper/340985/z1254.3/4920x2750 */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+/* INNER BORDERPANE */
+#pane_inner{
+	-fx-background-color: rgb(255, 255, 255, .5);
+    -fx-padding: 10 20 10 20;
+    -fx-border-width: 5.0;
+}
+
+/*HBOX FOR ALL TITLES */
+#hbox_title{
+    -fx-alignment: center;
+}
+
+/* ALL BUTTONS */
+#Button {
+	-fx-background-color: transparent;
+	-fx-background-image: url("btn_background.png");
+    -fx-background-size: 100% 100%;
+    -fx-text-fill: #FFFFFF;
+}
+/* GRIDPANE IN ALL VIEWS (SETTINGS AND LOGIN AND CONNECT) */
+#gridpane_inside{
+    -fx-padding: 10 20 10 20;
+}
+
+/* HEADER TITLE IN ALL VIEWS */
+#lblTitle{
+    -fx-text-fill: rgb(95, 62, 33);
+    -fx-alignment: center;
+}
+
+/* TABLE IN ALL VIEWS (HIGHSCORE AND LOBBY) */
+#tableview{
+	-fx-text-fill: rgb(95, 62, 33);
+	-fx-base: transparent;
+	-fx-background-color: transparent;
+}
+
+.table-view:row-selection .table-row-cell:selected .table-cell {
+    -fx-opacity:0.5;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: rgb(95, 62, 33);
+    -fx-alignment: TOP_LEFT;
+}
+
+.table-view .column-header{
+	-fx-background-color: transparent;
+}
+
+.table-cell {
+	-fx-border-width: 1 0 0 0;
+	-fx-border-color:  rgb(95, 62, 33);
+}
+ 
+.table-row-cell:empty .table-cell { /* source: http://fxexperience.com/2011/11/alternate-row-highlighting-in-empty-tableview-and-listview-rows/ */
+    -fx-border-width: 0px;
+}
+
+.scroll-bar {
+	-fx-background-color: transparent;
+}
+
+/*
+ * CONNECT VIEW
+ */
+#root_Connect{
+	-fx-background-image:url(Background_Connect.jpg); 	/* background-url: https://www.pinterest.com/pin/182677328616366545/ */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+/*
+ * SPLASHSCREEN VIEW
+ */
+ 
+#vbox_pb{
+	-fx-alignment: center;
+}
+
+#lbl_titlepicture{
+	-fx-background-image:url(dominion_logo.png); 	/* Source: https://de.wikipedia.org/wiki/Dominion_(Spiel)#/media/File:Dominion_(Spiel)_Logo.gif */
+	-fx-background-repeat: stretch;
+    -fx-background-size: 80% 80%;
+    -fx-background-position: center, center;
+}
+
+.progress-bar {
+    -fx-background-color: brown;
+    -fx-background-radius: 10, 10, 10, 10;
+    -fx-max-height: 20px;
+    -fx-min-width: 300px;
+    -fx-min-height: 20px;
+}
+ 
+.progress-bar .track{
+    -fx-background-color: black;
+    -fx-background-insets: 20;
+    -fx-background-radius: 6, 6, 6, 6;
+}
+ 
+.progress-bar .bar { 
+    -fx-background-color: grey;
+    -fx-background-insets: 30, 30, 30, 30; 
+    -fx-background-radius: 4, 4, 4, 4;
+}
+
+/*
+ * LOGIN VIEW
+ */
+ #root_Login{
+	-fx-background-image:url(Background_Login.jpg); 	/* background-url: https://www.walldevil.com/artwork-battlefield-drawings-fantasy-art-horses-knights-spears-swords-wallpaper-16658/ */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+/*
+ * MAINMENU VIEW
+ */
+ #root_MainMenu{
+	-fx-background-image:url(Background_MainMenu.jpg); 	/* background-url: https://www.youtube.com/watch?v=BDJ_mP_ktW0 */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+/*
+ * SETTINGS VIEW
+ */
+#ToggleButton{
+ 	-fx-background-color: transparent;
+	-fx-background-image: url("btn_background.png");
+    -fx-background-size: 100% 100%; 
+    -fx-text-fill: #FFFFFF;
+}
+ 
+#lbl_settings{
+    -fx-text-fill: rgb(95, 62, 33);
+}
+
+#root_Settings{
+	-fx-background-image:url(Background_Settings.jpg); 	/* background-url: https://www.youtube.com/watch?v=LgtRqwfJGbI */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+/*
+ * HIGHSCORE VIEW
+ */
+#root_Highscore{
+	-fx-background-image:url(Highscore_Background.jpg); 	/* background-url: https://wallup.net/middle-ages-ruins/ */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+#vbox_buttons{
+	-fx-alignment: center;
+}
+
+/*
+ * CARDSELECTION VIEW
+ */
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+.scroll-pane{
+	-fx-background-color: transparent;
+}
+ 
+/*
+ * LOBBY VIEW
+ */
+#root_Lobby{
+	-fx-background-image:url(Background_Lobby.jpg); 	/* background-url: https://www.pinterest.com/pin/85709199137159906/ */
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-font-family: Algerian;
+}
+
+/*
+ * CHAT VIEW
+ */
+#txta_chat{
+    -fx-text-fill: #FFFFFF;
+ }
+ 
+#txta_chat .content{
+	-fx-background-image: url(Chat_Background.jpg); /* source: https://wall.alphacoders.com/big.php?i=316707 */
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+
+#txtf_chat{
+	-fx-background-image: url(Chat_Background.jpg); /* source: https://wall.alphacoders.com/big.php?i=316707 */
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+    -fx-text-fill: #FFFFFF;
+}
+
+/*
+ * GAME
+ */
+.mainPane {
+ 	-fx-background-image: url(Background.jpg);
+ 	-fx-background-position: top left;
+ 	-fx-background-size: stretch;
+ 	-fx-alignment: center center;
+}
+ 
+.overlay {
+ 	-fx-alignment: center center;
+	-fx-background-color: transparent;
+}
+ 
+#overlaySP {
+ 	-fx-alignment: center center;
+ 	-fx-background-color: rgba(255, 255, 255, 0.7);
+}
+ 
+#StackPane {
+ 	-fx-alignment: center center;
+}
+ 
+#otherTexts {
+ 	-fx-font-weight: bold;
+ 	-fx-text-fill: rgba(0, 0, 0, 1);
+}
+ 
+ .timerText {
+	-fx-text-fill: rgb(255,0,0);
+}
+ 
+#fieldFX:hover {
+ 	-fx-border-color: rgb(102, 255, 51);
+ 	-fx-border-width: 3px;
+ 	-fx-border-height: 3px;
+}
+ 
+#selectedCard {
+ 	-fx-border-color: red;
+ 	-fx-border-width: 3px;
+ 	-fx-border-height: 3px;
+}
+ 
+#ButtonLeftPage {
+ 	-fx-background-image: url(ButtonLeftPage.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
+ 
+#ButtonRightPage {
+ 	-fx-background-image: url(ButtonRightPage.png);
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;
+}
